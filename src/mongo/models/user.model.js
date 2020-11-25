@@ -1,8 +1,8 @@
-const mongoose = require('mongoose')
+const mongoose = require('mongoose');
 
 const statusSchema = mongoose.Schema({
-  industry: String,
+  indusrty: String,
   bussines: String,
-})
+});
 
-module.exports = mongoose.model('Status', statusSchema)
+module.exports = mongoose.model('Status', statusSchema);
