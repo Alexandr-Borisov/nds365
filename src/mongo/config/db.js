@@ -14,7 +14,7 @@ const dbConnectionURL = 'mongodb://localhost:27017/nds365';
 
 function dbConnect() {
   mongoose.connect(dbConnectionURL, options, (err) => {
-    if (err) return console.log(err);
+    if (err) return console.log('>>>>>>>>>>>>>>>>', err);
     return console.log('Success connected to mogno');
   });
 }

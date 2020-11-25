@@ -1,0 +1,32 @@
+@import 'reset.css';
+@import 'index.css';
+@import 'style.css';
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #4a407c;
+  background-color: lightsalmon;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  padding: 50px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  max-width: 375px;
+}
+
+input,
+select,
+textarea {
+  color: #4a407c;
+}
+
+textarea:focus,
+input:focus {
+  color: #4a407c;
+}
