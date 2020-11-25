@@ -5,7 +5,7 @@ const hbs = require('hbs');
 const cookieParser = require('cookie-parser');
 const session = require('express-session');
 const MongoStore = require('connect-mongo')(session);
-const dbConnect = require('./src/mongo/config/db');
+const dbConnect = require('./src/mongo/config/models/db');
 const statusRouter = require('./src/routes/status');
 // const { checkAuth } = require('./src/middleware/auth');
 
@@ -19,6 +19,7 @@ hbs.registerPartials(path.join(process.env.PWD, 'src', 'views', 'partials'));
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use(express.static(path.join(__dirname, 'public')));
 app.use(cookieParser());
 
 // require('crypto').randomBytes(64).toString('hex')

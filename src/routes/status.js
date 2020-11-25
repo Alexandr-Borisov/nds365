@@ -1,19 +1,17 @@
 const express = require('express');
 
-const Status = require();
+const Status = require('../mongo/config/models/user.model');
+
 const router = express.Router();
 
-router.get('/', (req, res, next) => {
+router.get('/', (req, res) => {
   res.render('index');
 });
 
-router.post('/', (req, res, next) => {
+router.post('/', async (req, res) => {
   const { indusrty, bussines } = req.body;
   const status = new Status({ indusrty, bussines });
-  res.render('first');
-});
-
-router.get('/first/:id', (req, res) => {
-
+  await status.save();
+  res.render('calendar');
 });
 module.exports = router;

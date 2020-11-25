@@ -10,7 +10,7 @@ const options = {
   bufferMaxEntries: 0,
 };
 
-const dbConnectionURL = 'mongodb://localhost:27017/fox_p2w2d2';
+const dbConnectionURL = 'mongodb://localhost:27017/nds365';
 
 function dbConnect() {
   mongoose.connect(dbConnectionURL, options, (err) => {
