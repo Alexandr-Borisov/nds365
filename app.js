@@ -38,7 +38,6 @@ app.use(
     cookie: { secure: false, maxAge: 60e3 },
   })
 );
-app.use(express.static(path.join(process.env.PWD, 'public')));
 
 app.get('/range_slider', (req, res) => {
   res.render('range_slider');
