@@ -1,4 +1,3 @@
-
 // Setup the calendar with the current date
 $(document).ready(() => {
   const date = new Date();
@@ -149,7 +148,6 @@ function new_event(event) {
         //   $('#count').addClass('error-input');
       } else {
         $('#dialog').hide(250);
-        console.log('new event');
         new_event_json(name, date, day);
         date.setDate(day);
         init_calendar(date);
@@ -174,7 +172,6 @@ function show_events(events, month, day) {
   // Clear the dates container
   $('.events-container').empty();
   $('.events-container').show(250);
-  console.log(event_data.events);
   // If there are no events for this date, notify the user
   if (events.length === 0) {
     var event_card = $("<div class='event-card'></div>");
