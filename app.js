@@ -7,7 +7,10 @@ const session = require('express-session');
 const MongoStore = require('connect-mongo')(session);
 const dbConnect = require('./src/mongo/config/db');
 const statusRouter = require('./src/routes/status');
-const calculatorRouter = require('./src/routes/status');
+const calculatorRouter = require('./src/routes/calculator_rout');
+const docsRouter = require('./src/routes/docs');
+const sliderRouter = require('./src/routes/slider');
+const calendarRouter = require('./src/routes/calendar');
 // const { checkAuth } = require('./src/middleware/auth');
 
 const app = express();
@@ -39,12 +42,16 @@ app.use(
     cookie: { secure: false, maxAge: 60e3 },
   })
 );
+app.use('/', statusRouter);
+app.use('/docs', docsRouter);
+app.use('/slider', sliderRouter);
+app.use('/calendar', calendarRouter);
 
 app.get('/range_slider', (req, res) => {
   res.render('range_slider');
 });
 app.use('/', statusRouter);
-app.use('/calculator', calculatorRouter);
+app.use('/calculator_rout', calculatorRouter);
 
 app.listen(PORT, () => {
   console.log('Server started on port ', PORT);
