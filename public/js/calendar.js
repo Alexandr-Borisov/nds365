@@ -149,7 +149,6 @@ function new_event(event) {
         //   $('#count').addClass('error-input');
       } else {
         $('#dialog').hide(250);
-        console.log('new event');
         new_event_json(name, date, day);
         date.setDate(day);
         init_calendar(date);
@@ -174,7 +173,6 @@ function show_events(events, month, day) {
   // Clear the dates container
   $('.events-container').empty();
   $('.events-container').show(250);
-  console.log(event_data.events);
   // If there are no events for this date, notify the user
   if (events.length === 0) {
     var event_card = $("<div class='event-card'></div>");
@@ -188,7 +186,7 @@ function show_events(events, month, day) {
     // Go through and add each event as a card to the events container
     for (let i = 0; i < events.length; i++) {
       var event_card = $("<div class='event-card'></div>");
-      var event_name = $(`<div class='event-name'>${events[i].occasion}:</div>`);
+      var event_name = $(`<div class='event-name'>${events[i].occasion}</div>`);
       // let event_count = $(`<div class='event-count'>${events[i].invited_count} Invited</div>`);
       if (events[i].cancelled === true) {
         $(event_card).css({
@@ -414,7 +412,8 @@ var event_data = {
       cancelled: true,
     },
     {
-      occasion: '🔙  Штраф за непредоставленную декларацию по транспотному налогу 1000 рублей',
+      occasion:
+        '🔙  Штраф за непредоставленную декларацию по транспотному налогу 1000 рублей',
       year: 2021,
       month: 2,
       day: 2,

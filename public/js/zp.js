@@ -1,6 +1,6 @@
-const { form } = document.forms;
+const zpForm = document.forms.form;
 
-form.addEventListener('submit', async (event) => {
+zpForm.addEventListener('submit', async (event) => {
   event.preventDefault();
   const director = event.target.director.value;
   const manager = event.target.manager.value;
@@ -25,8 +25,11 @@ form.addEventListener('submit', async (event) => {
   document.querySelector('#priceMan').innerText = +result.priceMan;
 
   document.querySelector('#sum').innerText = Number(director) + Number(manager);
-  document.querySelector('#ndflDM').innerText = Number(result.NdflDir.toFixed(0)) + Number(result.NdflMan.toFixed(0));
-  document.querySelector('#onCardDM').innerText = Number(result.cardDir.toFixed(0)) + Number(result.cardMan.toFixed(0));
-  document.querySelector('#paywithsalDM').innerText = Number(result.vznosDir.toFixed(0)) + Number(result.vznosMan.toFixed(0));
+  document.querySelector('#ndflDM').innerText =
+    Number(result.NdflDir.toFixed(0)) + Number(result.NdflMan.toFixed(0));
+  document.querySelector('#onCardDM').innerText =
+    Number(result.cardDir.toFixed(0)) + Number(result.cardMan.toFixed(0));
+  document.querySelector('#paywithsalDM').innerText =
+    Number(result.vznosDir.toFixed(0)) + Number(result.vznosMan.toFixed(0));
   document.querySelector('#priceDM').innerText = result.priceDir + result.priceMan;
 });

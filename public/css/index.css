@@ -6,6 +6,7 @@
   background-color: #fff;
   max-width: 375px;
   flex-direction: column;
+  position: relative;
 }
 
 .first-page__form {
@@ -41,6 +42,20 @@
 }
 
 .btn-next {
+  background-color: #4a407c;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  width: 296px;
+  height: 54px;
+  border-radius: 5px;
+}
+
+.btn-login {
   background-color: #4a407c;
   border: none;
   color: white;
