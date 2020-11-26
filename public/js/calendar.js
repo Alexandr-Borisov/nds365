@@ -135,17 +135,17 @@ function new_event(event) {
   $('#ok-button').unbind().click({ date: event.data.date }, () => {
     const { date } = event.data;
     const name = $('#name').val().trim();
-    const count = parseInt($('#count').val().trim());
+    // const count = parseInt($('#count').val().trim());
     const day = parseInt($('.active-date').html());
     // Basic form validation
     if (name.length === 0) {
       $('#name').addClass('error-input');
-    } else if (isNaN(count)) {
-      $('#count').addClass('error-input');
+      // } else if (isNaN(count)) {
+      //   $('#count').addClass('error-input');
     } else {
       $('#dialog').hide(250);
       console.log('new event');
-      new_event_json(name, count, date, day);
+      new_event_json(name, date, day);
       date.setDate(day);
       init_calendar(date);
     }
@@ -153,10 +153,10 @@ function new_event(event) {
 }
 
 // Adds a json event to event_data
-function new_event_json(name, count, date, day) {
+function new_event_json(name, date, day) {
   const event = {
     occasion: name,
-    invited_count: count,
+    // invited_count: count,
     year: date.getFullYear(),
     month: date.getMonth() + 1,
     day,
@@ -182,14 +182,14 @@ function show_events(events, month, day) {
     for (let i = 0; i < events.length; i++) {
       var event_card = $("<div class='event-card'></div>");
       var event_name = $(`<div class='event-name'>${events[i].occasion}:</div>`);
-      let event_count = $(`<div class='event-count'>${events[i].invited_count} Invited</div>`);
+      // let event_count = $(`<div class='event-count'>${events[i].invited_count} Invited</div>`);
       if (events[i].cancelled === true) {
         $(event_card).css({
           'border-left': '10px solid #FF1744',
         });
-        event_count = $("<div class='event-cancelled'>Cancelled</div>");
+        // event_count = $("<div class='event-cancelled'>Cancelled</div>");
       }
-      $(event_card).append(event_name).append(event_count);
+      $(event_card).append(event_name);
       $('.events-container').append(event_card);
     }
   }
