@@ -7,15 +7,19 @@ router.get('/', (req, res) => {
 });
 
 router.get('/doc', (req, res) => {
-  res.render('docs');
+  res.render('doc');
 });
 
 router.get('/calc', (req, res) => {
   res.render('calc');
 });
 
-router.get('/nalogcalc', (req, res) => {
-  res.render('nalogcalc');
+router.post('/calc', (req, res) => {
+  res.redirect('/calc');
+});
+
+router.get('/nalogcalendar', (req, res) => {
+  res.render('nalogcalendar');
 });
 
 router.get('/workflow', (req, res) => {
