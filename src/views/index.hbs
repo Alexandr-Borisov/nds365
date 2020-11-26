@@ -2,36 +2,42 @@
       <form class="first-page__form" method="POST" action="/status">
         <div class="block-container__type">
           <h1 class="title">Ваша отрасль</h1>
-          <div class="choose-business__type">
-            <div id="choose-company__btn--type">
+          <div class="choose-business">
+            <div id="choose-type__div">
+              <img class="type-logo" src="/images/cart.png" alt="cart">
               <label>
                 <input
+                class="choose-type"
                   type="checkbox"
                   value="trade"
                   name="group1[]"
                   checked="checked"
+                  hidden
                 /><span class="choose-company__type">Торгующая компания</span>
               </label>
             </div>
-            <div id="choose-company__btn--type">
+            <div id="choose-type__div">
+               <img class="type-logo" src="/images/rest.png" alt="cart">
               <label>
-                <input type="checkbox" value="restoran" name="group1[]" /><span
+                <input class="choose-type" type="checkbox" value="restoran" name="group1[]" hidden/><span
                   class="choose-company__type"
                   >Ресторан</span
                 >
               </label>
             </div>
-            <div id="choose-company__btn--type">
+            <div id="choose-type__div">
+               <img class="type-logo" src="/images/hammer.png" alt="cart">
               <label>
-                <input type="checkbox" value="build" name="group1[]" /><span
+                <input class="choose-type" type="checkbox" value="build" name="group1[]" hidden/><span
                   class="choose-company__type"
                   >Строительная компания</span
                 >
               </label>
             </div>
-            <div id="choose-company__btn--type">
+            <div id="choose-type__div">
+               <img class="type-logo" src="/images/smiled.png" alt="cart">
               <label>
-                <input type="checkbox" value="services" name="group1[]" /><span
+                <input class="choose-type" type="checkbox" value="services" name="group1[]" hidden/><span
                   class="choose-company__type"
                   >Услуги</span
                 >
@@ -40,7 +46,7 @@
           </div>
         </div>
 
-        <div class="block-container">
+        <div class="block-container-inn">
           <div class="inn">
             <h1 class="title">ИНН компании</h1>
             <input
@@ -52,23 +58,25 @@
           </div>
         </div>
 
-        <div class="block-container">
-          <h1 class="title">Ваша отрасль</h1>
-          <div class="choose-business__role">
-            <div id="choose-company__btn--type" class="role">
+                <div class="block-container__form">
+          <h1 class="title">Форма бизнеса</h1>
+          <div class="choose-business--form">
+            <div id="choose-form__div">
               <label>
                 <input
+                class="choose-form"
                   type="checkbox"
                   value="IP"
                   name="group2[]"
                   checked="checked"
-                /><span class="choose-company__type">ИП</span>
+                  hidden
+                /><span class="choose-company__form">ИП</span>
               </label>
             </div>
-            <div id="choose-company__btn--type" class="role">
+            <div id="choose-form__div">
               <label>
-                <input type="checkbox" value="OOO" name="group2[]" /><span
-                  class="choose-company__type"
+                <input class="choose-form" type="checkbox" value="OOO" name="group2[]" hidden/><span
+                  class="choose-company__form"
                   >ООО</span
                 >
               </label>

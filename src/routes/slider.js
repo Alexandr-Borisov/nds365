@@ -6,7 +6,7 @@ router.get('/', (req, res) => {
   res.render('slider');
 });
 
-router.post('/answer', async (req, res) => {
-  res.render('answertoslider');
+router.post('/', async (req, res) => {
+  res.render('after-slider');
 });
 module.exports = router;
