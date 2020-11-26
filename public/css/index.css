@@ -1,3 +1,13 @@
+.main {
+  padding: 50px 15px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #fff;
+  max-width: 375px;
+  flex-direction: column;
+}
+
 .first-page__form {
   display: flex;
   flex-direction: column;
@@ -8,7 +18,7 @@
 .title {
   font-size: 24px;
   font-weight: 700;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .inn-input {
@@ -17,6 +27,17 @@
   width: 93%;
   height: 61px;
   padding: 0 10px;
+  opacity: 0.7;
+}
+
+.inn-input::placeholder {
+  color: #4a407c;
+  opacity: 0.5;
+}
+
+.inn-input:focus {
+  opacity: 1;
+  transition: all 0.2s;
 }
 
 .btn-next {
@@ -35,12 +56,79 @@
 
 .block-container__type {
   width: 100%;
+  padding: 0 10px;
 }
 
-.block-container {
+.block-container-inn {
   width: 100%;
+  padding: 0 10px;
+  margin-bottom: 50px;
+}
+
+.block-container__form {
+  width: 100%;
+  padding: 0 10px;
+  margin-bottom: 60px;
 }
 
 .block-container:not(:last-child) {
   margin-bottom: 50px;
+}
+
+.choose-business {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.choose-type:checked ~ span {
+  font-weight: 900;
+  font-size: 18px;
+  transition: all 0.1s;
+}
+
+#choose-type__div {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.type-logo {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.choose-company__type {
+  font-weight: 100;
+}
+
+.block-container__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.choose-business--form {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.choose-company__form {
+  margin-right: 20px;
+  min-width: 75px;
+}
+
+.choose-company__form {
+  display: block;
+  border: 1px solid #4a407c;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.choose-form:checked ~ span {
+  background-color: #4a407c;
+  color: #fff;
+  transition: all 0.1s;
 }
