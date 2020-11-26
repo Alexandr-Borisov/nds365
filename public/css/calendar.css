@@ -396,21 +396,27 @@ body {
   width: 320px;
 }
 .months-table {
-  display: block;
-  margin: 0 auto;
-  width: 320px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
 }
+
+.month {
+  padding: 10px 10px;
+  margin-right: 15px;
+
+  font-size: 0.8rem;
+}
+
 .event-card {
   width: 300px;
 }
 .day {
   padding: 0 7px;
 }
-.month {
-  display: inline-block;
-  padding: 10px 10px;
-  font-size: 0.8rem;
-}
+
 .table-date {
   width: 20px;
   height: 20px;
@@ -428,6 +434,11 @@ body {
 }
 
 .back-div-calend {
-  top: 3%;
+  position: absolute;
+  top: 2%;
   left: 5%;
+}
+
+.title-calend {
+  margin-top: 20px;
 }
