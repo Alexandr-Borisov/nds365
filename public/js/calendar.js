@@ -115,7 +115,9 @@ function prev_year(event) {
 // Event handler for clicking the new event button
 function new_event(event) {
   // if a date isn't selected then do nothing
-  if ($('.active-date').length === 0) { return; }
+  if ($('.active-date').length === 0) {
+    return;
+  }
   // remove red error input on click
   $('input').click(function () {
     $(this).removeClass('error-input');
@@ -133,24 +135,26 @@ function new_event(event) {
     $('.events-container').show(250);
   });
   // Event handler for ok button
-  $('#ok-button').unbind().click({ date: event.data.date }, () => {
-    const { date } = event.data;
-    const name = $('#name').val().trim();
-    // const count = parseInt($('#count').val().trim());
-    const day = parseInt($('.active-date').html());
-    // Basic form validation
-    if (name.length === 0) {
-      $('#name').addClass('error-input');
-      // } else if (isNaN(count)) {
-      //   $('#count').addClass('error-input');
-    } else {
-      $('#dialog').hide(250);
-      console.log('new event');
-      new_event_json(name, date, day);
-      date.setDate(day);
-      init_calendar(date);
-    }
-  });
+  $('#ok-button')
+    .unbind()
+    .click({ date: event.data.date }, () => {
+      const { date } = event.data;
+      const name = $('#name').val().trim();
+      // const count = parseInt($('#count').val().trim());
+      const day = parseInt($('.active-date').html());
+      // Basic form validation
+      if (name.length === 0) {
+        $('#name').addClass('error-input');
+        // } else if (isNaN(count)) {
+        //   $('#count').addClass('error-input');
+      } else {
+        $('#dialog').hide(250);
+        console.log('new event');
+        new_event_json(name, date, day);
+        date.setDate(day);
+        init_calendar(date);
+      }
+    });
 }
 
 // Adds a json event to event_data
@@ -174,7 +178,9 @@ function show_events(events, month, day) {
   // If there are no events for this date, notify the user
   if (events.length === 0) {
     var event_card = $("<div class='event-card'></div>");
-    var event_name = $(`<div class='event-name'>Нет событий, запланированных на ${month} ${day}.</div>`);
+    var event_name = $(
+      `<div class='event-name'>Нет событий, запланированных на ${month} ${day}.</div>`,
+    );
     $(event_card).css({ 'border-left': '10px solid #FF1744' });
     $(event_card).append(event_name);
     $('.events-container').append(event_card);
@@ -201,9 +207,7 @@ function check_events(day, month, year) {
   const events = [];
   for (let i = 0; i < event_data.events.length; i++) {
     const event = event_data.events[i];
-    if (event.day === day
-      && event.month === month
-      && event.year === year) {
+    if (event.day === day && event.month === month && event.year === year) {
       events.push(event);
     }
   }
