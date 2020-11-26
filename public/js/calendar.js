@@ -1,3 +1,4 @@
+
 // Setup the calendar with the current date
 $(document).ready(() => {
   const date = new Date();
