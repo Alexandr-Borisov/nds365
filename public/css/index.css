@@ -56,9 +56,9 @@
 }
 
 .btn-login {
-  background-color: #4a407c;
-  border: none;
-  color: white;
+  background-color: #fff;
+  border: 1px solid #4a407c;
+  color: #4a407c;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
@@ -67,6 +67,13 @@
   width: 296px;
   height: 54px;
   border-radius: 5px;
+}
+
+.btn-login:focus {
+  outline: none;
+  background-color: #4a407c;
+  color: #fff;
+  transition: all 0.2s;
 }
 
 .block-container__type {
