@@ -622,6 +622,27 @@ var event_data = {
       day: 16,
       cancelled: true,
     },
+    {
+      occasion: '🔙  Оплата НДС',
+      year: 2021,
+      month: 4,
+      day: 26,
+      cancelled: true,
+    },
+    {
+      occasion: '💲 Расчет зарплаты',
+      year: 2021,
+      month: 4,
+      day: 30,
+      cancelled: true,
+    },
+    {
+      occasion: '✅ Декларация УСН ООО',
+      year: 2021,
+      month: 4,
+      day: 30,
+      cancelled: true,
+    },
   ],
 };
 
