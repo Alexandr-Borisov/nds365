@@ -1,21 +1,35 @@
-<h2>Компания ООО "ABC"</h2>
+<div class="main">
+<h3 class="small title">Компания ООО "ABC"</h3>
+<div class="nav-calc">
+<div class="under-title"><span class="dividenty">Дивиденты<br>800 000 ₽</span><span class="nalog">Налог<br>17,8 %</span></div>
 
-<div>
-  <p>Дивиденды <span class="dividends"></span></p>
+<div class="calc-goal">
+  <ul class="calc-goal-list">
+    <li class="calc-goal-li goal-li"><span class="goal-text">Моя цель</span> 
+    
+    <a href="#"><img class="goal-logo" src="/images/pencil-create.png" alt="egit-goal"></a></li>
+    <li class="calc-goal-li">Дивиденты<br>1 000 000 ₽</li>
+    <li class="calc-goal-li">Налог<br>3 %</li>
+  </ul>
+  </div>
 </div>
 
-<div>
-  <p>Налог <span class="tax"></span></p>
-</div>
 
-<h3>Расчет финансовых показателей</h3>
-<form id="calculate" action="">
-  <label>Выручка<input id="earnings" type="text" name="earnings" value="2498000"></label>
-  <label>₽ в банке<input id="bank" type="text" name="bank" value="100000"></label>
-  <label>НДС<input id="nds" type="text" name="nds" value=""><span class="nds"></span></label>
-  <label>НП<input id="np" type="text" name="np" value=""><span class="np"></span></label>
-  <label>Дебиторка<input id="debit" type="text" name="debit" value="300000"></label>
-  <label>Кредиторка<input id="credit" type="text" name="credit" value="600000"></label>
-  <label>Кассовый разрыв<input id="cashgap" type="text" name="cashgap" value=""></label>
-  <button>Рассчитать</button>
+<h3 class="small-title">Финансовые показатели</h3>
+<form id="calculate" action="" class="calculator">
+  <ul class="calc-list">
+    <li class="calc-li">
+      <span class="calc-span">Выручка</span>
+    <input id="earnings" type="text" name="earnings" value="2498000">
+    </li>
+    <li class="calc-li"><span class="calc-span">₽ в банке</span><input id="bank" type="text" name="bank" value="100000"></li>
+    <li class="calc-li"><span class="nds calc-span">НДС</span><input id="nds" type="text" name="nds" value=""></li>
+    <li class="calc-li"><span class="np calc-span">НП</span><input id="np" type="text" name="np" value=""></span></li>
+    <li class="calc-li"><span class="calc-span">Дебиторка</span><input id="debit" type="text" name="debit" value="300000"></li>
+    <li class="calc-li"><span class="calc-span">Кредиторка</span><input id="credit" type="text" name="credit" value="600000"></li>
+    <li class="calc-li"><span class="calc-span">Кассовый разрыв</span><input id="cashgap" type="text" name="cashgap" value=""></li>
+  </ul>
+  <button class="btn-next">Рассчитать</button>
 </form>
+</div>
+

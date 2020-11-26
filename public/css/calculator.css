@@ -1,0 +1,108 @@
+.main {
+  padding: 50px 15px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #fff;
+  max-width: 375px;
+  flex-direction: column;
+  position: relative;
+}
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.calc-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.calc-li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.calc-li:last-child {
+  margin-bottom: 40px;
+}
+
+.under-title {
+  display: flex;
+  flex-direction: column;
+  background-color: #dedde4;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.calc-span {
+  margin-right: 30px;
+}
+
+.nav-calc {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+}
+
+.dividenty {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.nalog {
+  color: #f15931;
+  line-height: 1.5;
+}
+.calc-goal-li {
+  line-height: 1.2;
+}
+
+.calc-goal-li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+#earnings,
+#bank,
+#nds,
+#np,
+#debit,
+#credit,
+#cashgap {
+  border: none;
+  background-color: #bdbaca;
+  padding: 10px;
+  border-radius: 20px;
+  max-width: 120px;
+  color: black;
+  font-weight: 600;
+}
+
+#nds,
+#np,
+#cashgap {
+  background-color: #ea9d89;
+}
+
+.goal-li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.goal-logo {
+  width: 17px;
+  height: 17px;
+}
+
+.goal-text {
+  margin-right: 10px;
+}
