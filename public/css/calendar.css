@@ -45,12 +45,17 @@ body {
   font-family: Helvetica;
 }
 .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   overflow: none;
   max-width: 790px;
-  padding: 0px 0;
+  padding: 0;
   height: 500px;
   position: relative;
   margin: 20px auto;
+  margin-bottom: 40px;
   background: #4a407c;
   border-radius: 3px;
   box-shadow: 3px 8px 16px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
@@ -60,13 +65,15 @@ body {
 
 /*  Events display */
 .events-container {
+  display: flex;
+  flex-direction: column;
   overflow-y: scroll;
   height: 100%;
   float: right;
   margin: 0px auto;
   font: 13px Helvetica, Arial, sans-serif;
   display: inline-block;
-  padding: 0 10px;
+  padding: 5px;
   border-bottom-right-radius: 3px;
   border-top-right-radius: 3px;
 }
@@ -121,7 +128,11 @@ body {
   clear: both;
 }
 .calendar {
-  display: table;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
 }
 
 /* Calendar Header */
@@ -189,9 +200,6 @@ body {
 }
 #add-button {
   display: block;
-  position: absolute;
-  right: 20px;
-  bottom: 20px;
 }
 #add-button:hover,
 #ok-button:hover,
@@ -320,92 +328,106 @@ body {
   border-color: #ff1744;
 }
 
-/* Tablets and smaller */
-@media only screen and (max-width: 780px) {
-  .content {
-    overflow: visible;
-    position: relative;
-    max-width: 100%;
-    width: 370px;
-    height: 100%;
-    background: #4a407c;
-  }
-  .dialog {
-    width: 370px;
-    height: 450px;
-    border-radius: 3px;
-    top: 0;
-    left: 0;
-  }
-  .events-container {
-    float: none;
-    overflow: visible;
-    margin: 0 auto;
-    padding: 0;
-    display: block;
-    left: 0;
-    border-radius: 3px;
-  }
-
-  .calendar-container {
-    float: none;
-    padding: 0;
-    margin: 0 auto;
-    margin-right: 0;
-    display: block;
-    left: 0;
-    border-radius: 3px;
-    box-shadow: 3px 8px 16px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-    -moz-box-shadow: 3px 8px 16px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-    -webkit-box-shadow: 3px 8px 16px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-  }
-}
-
-/* Small phone screens */
-@media only screen and (max-width: 400px) {
-  .content,
-  .events-container,
-  .year-header,
-  .calendar-container {
-    font-size: 12px;
-    width: 320px;
-  }
-  .dialog {
-    width: 320px;
-  }
-  .months-table {
-    display: block;
-    margin: 0 auto;
-    width: 320px;
-  }
-  .event-card {
-    width: 300px;
-  }
-  .day {
-    padding: 0 7px;
-  }
-  .month {
-    display: inline-block;
-    padding: 10px 10px;
-    font-size: 0.8rem;
-  }
-  .table-date {
-    width: 20px;
-    height: 20px;
-    line-height: 20px;
-  }
-  .event-name,
-  .event-count,
-  .event-cancelled {
-    font-size: 0.8rem;
-  }
-  .add-button {
-    bottom: 10px;
-    right: 10px;
-    padding: 0.5rem 1.5rem;
-  }
-}
-
 .btn-link {
   text-align: center;
+}
+
+.main-calend {
+  padding: 50px 15px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #fff;
+  max-width: 375px;
+  flex-direction: column;
+  position: relative;
+}
+
+.frame {
+  margin-bottom: 20px;
+}
+
+.content {
+  overflow: visible;
+  position: relative;
+  max-width: 100%;
+  width: 370px;
+  height: 100%;
+  background: #4a407c;
+}
+.dialog {
+  width: 370px;
+  height: 450px;
+  border-radius: 3px;
+  top: 0;
+  left: 0;
+}
+.events-container {
+  float: none;
+  overflow: visible;
+  margin: 0 auto;
+  padding: 0;
+  display: block;
+  left: 0;
+  border-radius: 3px;
+}
+
+.calendar-container {
+  float: none;
+  padding: 0;
+  margin: 0 auto;
+  margin-right: 0;
+  display: block;
+  left: 0;
+  border-radius: 3px;
+  box-shadow: 3px 8px 16px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  -moz-box-shadow: 3px 8px 16px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  -webkit-box-shadow: 3px 8px 16px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.content,
+.events-container,
+.year-header,
+.calendar-container {
+  font-size: 12px;
+  width: 320px;
+}
+.dialog {
+  width: 320px;
+}
+.months-table {
+  display: block;
+  margin: 0 auto;
+  width: 320px;
+}
+.event-card {
+  width: 300px;
+}
+.day {
+  padding: 0 7px;
+}
+.month {
+  display: inline-block;
+  padding: 10px 10px;
+  font-size: 0.8rem;
+}
+.table-date {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+}
+.event-name,
+.event-count,
+.event-cancelled {
+  font-size: 0.8rem;
+}
+.add-button {
+  bottom: 10px;
+  right: 10px;
+  padding: 0.5rem 1.5rem;
+}
+
+.back-div-calend {
+  top: 3%;
+  left: 5%;
 }
