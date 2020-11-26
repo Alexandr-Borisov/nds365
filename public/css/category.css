@@ -6,6 +6,7 @@
   background-color: #fff;
   max-width: 375px;
   flex-direction: column;
+  position: relative;
 }
 
 .category-list {
@@ -19,6 +20,7 @@
 
 .category-link__underline {
   border: 1px solid #e9e9e9;
+  width: 95%;
 }
 
 .category-link:last-child {
@@ -38,10 +40,10 @@
 }
 
 .title-category {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 700;
   margin-bottom: 20px;
-  padding-left: 40px;
+  padding-left: 30px;
   line-height: 1.1;
 }
 
@@ -49,4 +51,16 @@
   width: 23px;
   height: 23px;
   margin-right: 10px;
+}
+
+.back {
+  width: 43px;
+  height: 38px;
+  position: absolute;
+  top: 2%;
+  left: 10%;
+}
+
+.back-div {
+  margin-bottom: 20px;
 }
