@@ -11,7 +11,7 @@ router.get('/doc', (req, res) => {
 });
 
 router.get('/calc', (req, res) => {
-  res.render('calc');
+  res.render('/docs/calc');
 });
 
 router.post('/calc', (req, res) => {

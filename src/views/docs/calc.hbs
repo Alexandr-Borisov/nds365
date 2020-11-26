@@ -9,7 +9,44 @@
     С января 2021 года МРОТ повысят до 20 361 рублей. Рекомендуем сразу принять сотрудников на данный оклад.
   </p>
   <form action="/calc" method="POST">
-    <input type="text">
+    <table>
+      <thead>
+        <tr>
+          <th>Расчет налогов </th>
+          <th>Оклад</th>
+          <th>НДФЛ</th>
+          <th>На карту</th>
+          <th>Взносы с зарплаты</th>
+          <th>Стоимость сотрудника</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Генеральный директор</td>
+          <td><input type="num" value="20361" placeholder="оклад"></td>
+          <td>num</td>
+          <td>num</td>
+          <td>num</td>
+          <td>num</td>
+        </tr>
+        <tr>
+          <td>Менеджер</td>
+          <td><input type="num" value="20361" placeholder="оклад"></td>
+          <td>num</td>
+          <td>num</td>
+          <td>num</td>
+          <td>num</td>
+        </tr>
+        <tr>
+          <td>Итого</td>
+          <td>Sum</td>
+          <td>Sum</td>
+          <td>Sum</td>
+          <td>Sum</td>
+          <td>Sum</td>
+        </tr>
+      </tbody>
+    </table>
     <button>Рассчитать</button>
   </form>
 </div>
