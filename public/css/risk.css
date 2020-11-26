@@ -1,0 +1,24 @@
+.main-risks {
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  max-width: 375px;
+  flex-direction: column;
+  position: relative;
+}
+
+.back-div-risk {
+  position: absolute;
+  top: 1%;
+  left: 2%;
+}
+
+.ul-risk {
+  list-style: disc;
+}
+
+.li-risk {
+  line-height: 1.5;
+}
