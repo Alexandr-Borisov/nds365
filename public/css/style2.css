@@ -2,6 +2,7 @@
 @import 'index.css';
 @import 'style.css';
 @import 'category.css';
+@import 'calendar.css';
 
 body {
   font-family: 'Roboto', sans-serif;
