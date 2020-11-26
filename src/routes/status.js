@@ -13,6 +13,6 @@ router.post('/status', async (req, res) => {
   const bussines = req.body.group2[0];
   const status = new Status({ indusrty, bussines });
   await status.save();
-  res.render('calendar');
+  res.redirect('/docs');
 });
 module.exports = router;
