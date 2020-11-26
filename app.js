@@ -7,6 +7,7 @@ const session = require('express-session');
 const MongoStore = require('connect-mongo')(session);
 const dbConnect = require('./src/mongo/config/db');
 const statusRouter = require('./src/routes/status');
+const calculatorRouter = require('./src/routes/status');
 // const { checkAuth } = require('./src/middleware/auth');
 
 const app = express();
@@ -43,6 +44,7 @@ app.get('/range_slider', (req, res) => {
   res.render('range_slider');
 });
 app.use('/', statusRouter);
+app.use('/calculator', calculatorRouter);
 
 app.listen(PORT, () => {
   console.log('Server started on port ', PORT);

@@ -5,7 +5,7 @@ const Status = require('../mongo/models/user.model');
 const router = express.Router();
 
 router.get('/', (req, res) => {
-  res.render('index');
+  res.render('calculator/calculator');
 });
 
 router.post('/status', async (req, res) => {
