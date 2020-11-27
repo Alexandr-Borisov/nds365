@@ -31,3 +31,10 @@ input:focus {
 .form-control-range {
   margin-top: 20px;
 }
+.up {
+  display: flex;
+  cursor: pointer;
+}
+.op {
+  display: flex;
+}

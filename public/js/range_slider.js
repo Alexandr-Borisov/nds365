@@ -8,3 +8,11 @@ slider.oninput = function () {
   output.innerHTML = this.value;
   console.log(output);
 };
+
+
+const sliderForm = document.forms.slider;
+
+// sliderForm.addEventListener('submit', (event) => {
+//   event.preventDefault();
+//   console.log(event.target.group[]);
+// });
