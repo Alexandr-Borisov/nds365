@@ -6,6 +6,7 @@
 @import 'range.css';
 @import 'cat-1.css';
 @import 'risk.css';
+@import 'calculator.css';
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -29,4 +30,11 @@ input:focus {
 
 .form-control-range {
   margin-top: 20px;
+}
+.up {
+  display: flex;
+  cursor: pointer;
+}
+.op {
+  display: flex;
 }

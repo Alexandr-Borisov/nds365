@@ -1,46 +1,63 @@
-<form method="POST" action="/slider">
+<form name="slider" method="POST" action="/slider">
   <div class="range-container">
     <div class="back-div-calend">
       <a href="/docs"><img class="back" src="/images/back.png" alt="back"></a>
     </div>
     <h1 class="title-range">На бухгалтерию я готов
       тратить:</h1>
-    <div class="form-group range">
-      <label for="formControlRange">Время</label>
-      <input type="range" class="form-control-range" id="formControlRange">
-      <div class="min-max">
-        <span class="min-max-span">min</span><span class="min-max-span">max</span>
+    <h1 class="title-range">У вас есть время?</h1>
+    <div class="up">
+      <div id="choose-form__div">
+        <label>
+          <input class="choose-form" type="checkbox" value="yes" name="group[]" checked="checked" hidden /><span
+            class="choose-company__form">Да</span>
+        </label>
+      </div>
+      <div id="choose-form__div">
+        <label>
+          <input class="choose-form" type="checkbox" value="no" name="group[]" hidden /><span
+            class="choose-company__form">Нет</span>
+        </label>
+      </div>
+    </div>
+    <h1 class="title-range">У вас есть деньги?</h1>
+
+    <div class="up">
+      <div id="choose-form__div">
+        <label>
+          <input class="choose-form" type="checkbox" value="yes" name="group1[]" checked="checked" hidden /><span
+            class="choose-company__form">Да</span>
+        </label>
       </div>
 
-    </div>
 
-    <div class="form-group range">
-      <label class="label-name" for="formControlRange">Деньги</label>
-      <input type="range" class="form-control-range" id="formControlRange">
-
-      <div class="min-max">
-        <span class="min-max-span">min</span><span class="min-max-span">max</span>
+      <div id="choose-form__div">
+        <label>
+          <input class="choose-form" type="checkbox" value="no" name="group1[]" hidden /><span
+            class="choose-company__form">Нет</span>
+        </label>
       </div>
     </div>
     <div class="block-container__form">
       <h1 class="title-range">У вас есть бухгалтер?</h1>
-      <div class="choose-business--form">
+      <div class="choose-business--form"></div>
+      <div class="up">
         <div id="choose-form__div">
           <label>
-            <input class="choose-form" type="checkbox" value="yes" name="group[]" checked="checked" hidden /><span
+            <input class="choose-form" type="checkbox" value="yes" name="group2[]" checked="checked" hidden /><span
               class="choose-company__form">Да</span>
           </label>
         </div>
         <div id="choose-form__div">
           <label>
-            <input class="choose-form" type="checkbox" value="no" name="group[]" hidden /><span
+            <input class="choose-form" type="checkbox" value="no" name="group2[]" hidden /><span
               class="choose-company__form">Нет</span>
           </label>
         </div>
       </div>
     </div>
-
-    <button class="btn-next">Далее</button>
+  </div>
+  </div>
   </div>
   {{>button}}
 </form>

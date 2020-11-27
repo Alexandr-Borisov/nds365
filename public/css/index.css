@@ -55,6 +55,10 @@
   border-radius: 5px;
 }
 
+.btn-next:focus {
+  outline: none;
+}
+
 .btn-login {
   background-color: #fff;
   border: 1px solid #4a407c;
