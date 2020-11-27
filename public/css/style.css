@@ -88,3 +88,15 @@ input:focus {
   color: #4a407c;
   text-decoration: none;
 }
+
+.text-thx {
+  padding: 20px;
+  line-height: 1.4;
+  text-align: center;
+  margin: 30px 0;
+}
+
+.main-logo {
+  width: 207px;
+  height: 50px;
+}

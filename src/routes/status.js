@@ -16,7 +16,6 @@ router.post('/status', async (req, res) => {
     id: status._id,
   };
   await status.save();
-  console.log(req.session.status);
   res.redirect('/docs');
 });
 module.exports = router;
