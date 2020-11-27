@@ -1,3 +1,4 @@
+require('dotenv').config();
 const mongoose = require('mongoose');
 
 const options = {
@@ -10,7 +11,7 @@ const options = {
   bufferMaxEntries: 0,
 };
 
-const dbConnectionURL = 'mongodb://localhost:27017/nds365';
+const dbConnectionURL = process.env.DB;
 
 function dbConnect() {
   mongoose.connect(dbConnectionURL, options, (err) => {
