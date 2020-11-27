@@ -28,6 +28,8 @@ form.addEventListener('submit', async (event) => {
   document.querySelector('#nds').value = answer.newNds;
   document.querySelector('#np').value = answer.newNp;
   document.querySelector('#cashgap').value = answer.newCashgap;
-  document.querySelector('.dividends').innerText = answer.dividends;
-  document.querySelector('.tax').innerText = answer.tax;
+  document.querySelector('.dividends').innerText = `${Number(answer.dividends).toFixed(
+    0
+  )} ₽`;
+  document.querySelector('.tax').innerText = `${answer.tax} %`;
 });

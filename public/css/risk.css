@@ -15,13 +15,9 @@
   left: 2%;
 }
 
-.ul-risk {
-  list-style: disc;
-}
-
 .li-risk {
   line-height: 1.5;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   margin-left: 15px;
 }
 
