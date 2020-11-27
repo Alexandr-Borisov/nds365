@@ -2,7 +2,7 @@ const express = require('express');
 
 const router = express.Router();
 
-router.get('/calculator', (req, res) => {
+router.get('/', (req, res) => {
   res.render('calculator/calculator');
 });
 
@@ -15,7 +15,9 @@ router.post('/calculator', (req, res) => {
   const newCashgap = String(+bank + +debit - +credit - newNds - newNp);
   const dividends = String((newNp * 100) / 20);
   const tax = String(nds + np);
-  res.json({ newNds, newNp, newCashgap, dividends, tax });
+  res.json({
+    newNds, newNp, newCashgap, dividends, tax,
+  });
 });
 
 module.exports = router;
