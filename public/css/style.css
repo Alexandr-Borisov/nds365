@@ -3,11 +3,13 @@
 @import 'style.css';
 @import 'category.css';
 @import 'calendar.css';
+@import 'range.css';
+@import 'cat-1.css';
 
 body {
   font-family: 'Roboto', sans-serif;
   color: #4a407c;
-  background-color: lightsalmon;
+  background-color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,4 +24,15 @@ textarea {
 textarea:focus,
 input:focus {
   color: #4a407c;
+}
+
+.form-control-range {
+  margin-top: 20px;
+}
+.up {
+  display: flex;
+  cursor: pointer;
+}
+.op {
+  display: flex;
 }

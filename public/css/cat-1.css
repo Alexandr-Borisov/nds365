@@ -1,0 +1,35 @@
+.back-div-cat-1 {
+  position: absolute;
+  top: 3%;
+  left: 2%;
+}
+
+.small-title {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.list-cat-1 {
+  list-style: disc;
+  padding-left: 20px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.text {
+  margin: 30px 0;
+}
+
+.text-calc {
+  margin: 30px 0;
+}
+
+table,
+th,
+td {
+  border: 1px solid rgba(74, 64, 124, 0.3);
+  padding: 5px;
+}
+
+table {
+}

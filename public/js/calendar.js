@@ -1,4 +1,3 @@
-
 // Setup the calendar with the current date
 $(document).ready(() => {
   const date = new Date();
@@ -149,7 +148,6 @@ function new_event(event) {
         //   $('#count').addClass('error-input');
       } else {
         $('#dialog').hide(250);
-        console.log('new event');
         new_event_json(name, date, day);
         date.setDate(day);
         init_calendar(date);
@@ -174,7 +172,6 @@ function show_events(events, month, day) {
   // Clear the dates container
   $('.events-container').empty();
   $('.events-container').show(250);
-  console.log(event_data.events);
   // If there are no events for this date, notify the user
   if (events.length === 0) {
     var event_card = $("<div class='event-card'></div>");
@@ -188,7 +185,7 @@ function show_events(events, month, day) {
     // Go through and add each event as a card to the events container
     for (let i = 0; i < events.length; i++) {
       var event_card = $("<div class='event-card'></div>");
-      var event_name = $(`<div class='event-name'>${events[i].occasion}:</div>`);
+      var event_name = $(`<div class='event-name'>${events[i].occasion}</div>`);
       // let event_count = $(`<div class='event-count'>${events[i].invited_count} Invited</div>`);
       if (events[i].cancelled === true) {
         $(event_card).css({
@@ -218,87 +215,243 @@ function check_events(day, month, year) {
 var event_data = {
   events: [
     {
-      occasion: ' Repeated Test Event ',
-      invited_count: 120,
+      occasion: '⏰  Сдать СЗВМ',
       year: 2020,
       month: 11,
-      day: 28,
+      day: 15,
       cancelled: true,
     },
     {
-      occasion: ' Repeated Test Event ',
-      invited_count: 120,
-      year: 2017,
-      month: 5,
-      day: 10,
+      occasion: '💲 Оплатить налоги с ЗП',
+      year: 2020,
+      month: 11,
+      day: 15,
       cancelled: true,
     },
     {
-      occasion: ' Repeated Test Event ',
-      invited_count: 120,
-      year: 2017,
-      month: 5,
-      day: 10,
+      occasion: '🔙  Штраф 500 рублей за каждого сотрудника',
+      year: 2020,
+      month: 11,
+      day: 16,
       cancelled: true,
     },
     {
-      occasion: ' Repeated Test Event ',
-      invited_count: 120,
-      year: 2017,
-      month: 5,
-      day: 10,
-    },
-    {
-      occasion: ' Repeated Test Event ',
-      invited_count: 120,
-      year: 2017,
-      month: 5,
-      day: 10,
+      occasion: '🔙  Пени по налогам',
+      year: 2020,
+      month: 11,
+      day: 16,
       cancelled: true,
     },
     {
-      occasion: ' Repeated Test Event ',
-      invited_count: 120,
-      year: 2017,
-      month: 5,
-      day: 10,
-    },
-    {
-      occasion: ' Repeated Test Event ',
-      invited_count: 120,
-      year: 2017,
-      month: 5,
-      day: 10,
+      occasion: '💲 Оплата НДС',
+      year: 2020,
+      month: 11,
+      day: 25,
       cancelled: true,
     },
     {
-      occasion: ' Repeated Test Event ',
-      invited_count: 120,
-      year: 2017,
-      month: 5,
-      day: 10,
-    },
-    {
-      occasion: ' Repeated Test Event ',
-      invited_count: 120,
-      year: 2017,
-      month: 5,
-      day: 10,
+      occasion: '🔙  Пени по налогам',
+      year: 2020,
+      month: 11,
+      day: 26,
       cancelled: true,
     },
     {
-      occasion: ' Repeated Test Event ',
-      invited_count: 120,
-      year: 2017,
-      month: 5,
-      day: 10,
+      occasion: '💲 Расчет зарплаты',
+      year: 2020,
+      month: 11,
+      day: 30,
+      cancelled: true,
     },
     {
-      occasion: ' Test Event',
-      invited_count: 120,
-      year: 2017,
-      month: 5,
-      day: 11,
+      occasion: '📈 Заполнить отчет для руководителя',
+      year: 2020,
+      month: 12,
+      day: 5,
+      cancelled: true,
+    },
+    {
+      occasion: '⏰  Сдать СЗВМ',
+      year: 2020,
+      month: 12,
+      day: 15,
+      cancelled: true,
+    },
+    {
+      occasion: '💲 Оплатить налоги с ЗП',
+      year: 2020,
+      month: 12,
+      day: 15,
+      cancelled: true,
+    },
+    {
+      occasion: '🔙  Штраф 500 рублей за каждого сотрудника',
+      year: 2020,
+      month: 12,
+      day: 16,
+      cancelled: true,
+    },
+    {
+      occasion: '🔙  Пени по налогам',
+      year: 2020,
+      month: 12,
+      day: 16,
+      cancelled: true,
+    },
+    {
+      occasion: '💲 Оплата НДС',
+      year: 2020,
+      month: 12,
+      day: 25,
+      cancelled: true,
+    },
+    {
+      occasion: '🔙  Пени по налогам',
+      year: 2020,
+      month: 12,
+      day: 26,
+      cancelled: true,
+    },
+    {
+      occasion: '💲 Оплатить взносы ИП',
+      year: 2020,
+      month: 12,
+      day: 30,
+      cancelled: true,
+    },
+    {
+      occasion: '💲 Расчет зарплаты',
+      year: 2020,
+      month: 12,
+      day: 31,
+      cancelled: true,
+    },
+    {
+      occasion: '💲 Расчет зарплаты',
+      year: 2020,
+      month: 11,
+      day: 30,
+      cancelled: true,
+    },
+    {
+      occasion: '📈 Заполнить отчет для руководителя',
+      year: 2021,
+      month: 1,
+      day: 5,
+      cancelled: true,
+    },
+    {
+      occasion: '⏰  Сдать СЗВМ',
+      year: 2021,
+      month: 1,
+      day: 15,
+      cancelled: true,
+    },
+    {
+      occasion: '💲 Оплатить налоги с ЗП',
+      year: 2021,
+      month: 1,
+      day: 15,
+      cancelled: true,
+    },
+    {
+      occasion: '🔙  Штраф 500 рублей за каждого сотрудника',
+      year: 2021,
+      month: 1,
+      day: 18,
+      cancelled: true,
+    },
+    {
+      occasion: '🔙  Пени по налогам',
+      year: 2021,
+      month: 1,
+      day: 18,
+      cancelled: true,
+    },
+    {
+      occasion: '💲 Оплата НДС',
+      year: 2021,
+      month: 1,
+      day: 25,
+      cancelled: true,
+    },
+    {
+      occasion: '🚫 Блокировка счета за непредоставленную отчетность',
+      year: 2021,
+      month: 1,
+      day: 26,
+      cancelled: true,
+    },
+    {
+      occasion: '🔙  Оплата НДС',
+      year: 2021,
+      month: 1,
+      day: 26,
+      cancelled: true,
+    },
+    {
+      occasion: '💲 Расчет зарплаты',
+      year: 2021,
+      month: 1,
+      day: 29,
+      cancelled: true,
+    },
+    {
+      occasion: '✅ Декларация по транспортному налогу',
+      year: 2021,
+      month: 2,
+      day: 1,
+      cancelled: true,
+    },
+    {
+      occasion: '✅ Декларация РСВ',
+      year: 2021,
+      month: 2,
+      day: 2,
+      cancelled: true,
+    },
+    {
+      occasion:
+        '🔙  Штраф за непредоставленную декларацию по транспотному налогу 1000 рублей',
+      year: 2021,
+      month: 2,
+      day: 2,
+      cancelled: true,
+    },
+    {
+      occasion: '🚫 Блокировка счета за непредоставленную отчетность',
+      year: 2021,
+      month: 2,
+      day: 3,
+      cancelled: true,
+    },
+    {
+      occasion: '🔙  Штраф 20% от суммы налога за несданный отчет',
+      year: 2021,
+      month: 2,
+      day: 3,
+      cancelled: true,
+    },
+    {
+      occasion: '📈 Заполнить отчет для руководителя',
+      year: 2021,
+      month: 2,
+      day: 5,
+      cancelled: true,
+    },
+    {
+      occasion: '⏰  Сдать СЗВМ',
+      year: 2021,
+      month: 2,
+      day: 15,
+      cancelled: true,
+    },
+    {
+      occasion: '💲 Оплатить налоги с ЗП',
+      year: 2021,
+      month: 2,
+      day: 15,
+      cancelled: true,
     },
   ],
 };
