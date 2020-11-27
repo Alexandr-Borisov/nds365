@@ -2,54 +2,127 @@
   <div class="back-div-cat-1">
     <a href="/docs"><img class="back" src="/images/back.png" alt="back"></a>
   </div>
-    <h3 class="small-title">Калькулятор</h3>
-    <p class="text-calc">
-      Для торгующей компании необходимо принять в штат несколько сотрудников. Рекомендуем Генерального директора,
-      менеджера по продажам.
-      МРОТ по Москве на сегодня 20 195 рублей
-    </p>
-    <p class="text-calc"> 
-      С января 2021 года МРОТ повысят до 20 361 рублей. Рекомендуем сразу принять сотрудников на данный оклад.
-    </p>
-    <form name="form">
-      <table class="calc-table">
-        <thead class="calc-table">
-          <tr >
-            <th >Расчет налогов </th>
-            <th>Оклад</th>
-            <th>НДФЛ</th>
-            <th>На карту</th>
-            <th>Взносы с зарплаты</th>
-            <th>Стоимость сотрудника</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Генеральный директор</td>
-            <td><input type="number" value="20361" placeholder="оклад" name="director"></td>
-            <td id="ndflDir"></td>
-            <td id="onCardDir"></td>
-            <td id="paywithsalDir"></td>
-            <td id="priceDir"></td>
-          </tr>
-          <tr>
-            <td>Менеджер</td>
-            <td><input type="number" value="20361" placeholder="оклад" name="manager"></td>
-            <td id="ndflMan"></td>
-            <td id="onCardMan"></td>
-            <td id="paywithsalMan"></td>
-            <td id="priceMan"></td>
-          </tr>
-          <tr>
-            <td>Итого</td>
-            <td id="sum"></td>
-            <td id="ndflDM"></td>
-            <td id="onCardDM"></td>
-            <td id="paywithsalDM"></td>
-            <td id="priceDM"></td>
-          </tr>
-        </tbody>
-      </table>
-      <button>Рассчитать</button>
-    </form>
+  <h3 class="small-title">Калькулятор</h3>
+  <p class="text-calc">
+    Для торгующей компании необходимо принять в штат несколько сотрудников. Рекомендуем Генерального директора,
+    менеджера по продажам.
+    МРОТ по Москве на сегодня 20 195 рублей
+  </p>
+  <p class="text-calc">
+    С января 2021 года МРОТ повысят до 20 361 рублей. Рекомендуем сразу принять сотрудников на данный оклад.
+  </p>
+  <form name="form">
+    <table>
+      <thead>
+        <tr>
+          <th>Расчет налогов </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Генеральный директор</td>
+        </tr>
+        <tr>
+          <th>Оклад</th>
+        </tr>
+        <tr>
+          <td><input type="number" value="20361" placeholder="оклад" name="director"></td>
+        </tr>
+        <tr>
+          <th>НДФЛ</th>
+        </tr>
+        <tr>
+          <td id="ndflDir"></td>
+        </tr>
+        <tr>
+          <th>На карту</th>
+        </tr>
+        <tr>
+          <td id="onCardDir"></td>
+        </tr>
+        <tr>
+          <th>Взносы с зарплаты</th>
+        </tr>
+        <tr>
+          <td id="paywithsalDir"></td>
+        </tr>
+        <tr>
+          <th>Стоимость сотрудника</th>
+        </tr>
+        <tr>
+          <td id="priceDir"></td>
+        </tr>
+        <tr>
+          <td>Менеджер</td>
+        </tr>
+        <tr>
+          <th>Оклад</th>
+        </tr>
+        <tr>
+          <td><input type="number" value="20361" placeholder="оклад" name="manager"></td>
+        </tr>
+        <tr>
+          <th>НДФЛ</th>
+        </tr>
+        <tr>
+          <td id="ndflMan"></td>
+        </tr>
+        <tr>
+          <th>На карту</th>
+        </tr>
+        <tr>
+          <td id="onCardMan"></td>
+        </tr>
+        <tr>
+          <th>Взносы с зарплаты</th>
+        </tr>
+        <tr>
+          <td id="paywithsalMan"></td>
+        </tr>
+        <tr>
+          <th>Стоимость сотрудника</th>
+        </tr>
+        <tr>
+          <td id="priceMan"></td>
+        </tr>
+      </tbody>
+    </table>
+    <button>Рассчитать</button>
+  </form>
 </div>
+
+{{!-- <table class="calc-table">
+  <tr>
+    <th>Расчет налогов </th>
+    <th>Оклад</th>
+    <th>НДФЛ</th>
+    <th>На карту</th>
+    <th>Взносы с зарплаты</th>
+    <th>Стоимость сотрудника</th>
+  </tr>
+  <tr>
+    <td>Генеральный директор</td>
+    <td><input type="number" value="20361" placeholder="оклад" name="director"></td>
+    <td id="ndflDir"></td>
+    <td id="onCardDir"></td>
+    <td id="paywithsalDir"></td>
+    <td id="priceDir"></td>
+  </tr>
+  <tr>
+    <td>Менеджер</td>
+    <td><input type="number" value="20361" placeholder="оклад" name="manager"></td>
+    <td id="ndflMan"></td>
+    <td id="onCardMan"></td>
+    <td id="paywithsalMan"></td>
+    <td id="priceMan"></td>
+  </tr>
+  <tr>
+    <td>Итого</td>
+    <td id="sum"></td>
+    <td id="ndflDM"></td>
+    <td id="onCardDM"></td>
+    <td id="paywithsalDM"></td>
+    <td id="priceDM"></td>
+  </tr>
+</table>
+<button>Рассчитать</button> --}}
