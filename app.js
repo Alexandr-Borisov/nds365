@@ -36,10 +36,10 @@ app.use(
     resave: false,
     store: new MongoStore({
       mongooseConnection: mongoose.connection,
-      collection: 'asdfasdf',
+      collection: 'sessions',
     }),
     saveUninitialized: false,
-    cookie: { secure: false, maxAge: 60e3 },
+    cookie: { secure: false },
   }),
 );
 app.use('/', statusRouter);
