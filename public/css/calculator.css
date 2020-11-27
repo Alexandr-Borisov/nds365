@@ -119,3 +119,27 @@ input::-webkit-inner-spin-button {
 input[type='number'] {
   -moz-appearance: textfield;
 }
+
+.bottom_nav {
+  background-color: #f8f8f8;
+  width: 100%;
+  padding: 10px 20px;
+  min-width: 375px;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-li {
+  height: 24px;
+  width: 24px;
+}
+
+.nav-list li:last-of-type img {
+  height: 22px;
+  width: 22px;
+  margin-bottom: 1px;
+}

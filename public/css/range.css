@@ -44,26 +44,35 @@
   margin-top: 50px;
 }
 
-.mt-color{
-  color: #EA9D89;
+.mt-color {
+  color: #ea9d89;
   font-size: 16px;
 }
-.btn-non{
-  background: #BDBACA;
+.btn-non {
+  background: #bdbaca;
   border-radius: 20px;
 }
-.span-non{
-  color: #4A407C;
+.span-non {
+  color: #4a407c;
   font-size: 16px;
 }
-.p-non{
-  color: #4A407C;
+.p-non {
+  color: #4a407c;
   font-size: 24px;
 }
-.a-non{
-  color: #4A407C;
+.a-non {
+  color: #4a407c;
   font-size: 16px;
-  background: #BDBACA;
+  background: #bdbaca;
   border-radius: 20px;
   text-decoration: none;
+}
+
+.link-slider:link,
+.link-slider:visited,
+.link-slider:hover,
+.link-slider:active,
+.link-slider:focus {
+  text-decoration: none;
+  color: #fff;
 }
