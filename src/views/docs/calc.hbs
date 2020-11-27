@@ -2,92 +2,87 @@
   <div class="back-div-cat-1">
     <a href="/docs"><img class="back" src="/images/back.png" alt="back"></a>
   </div>
-  <h3 class="small-title">Калькулятор</h3>
-  <p class="text-calc">
+  <h3 class="small-title">Калькулятор зарплаты</h3>
+  <p class="text-calc-zp">
     Для торгующей компании необходимо принять в штат несколько сотрудников. Рекомендуем Генерального директора,
     менеджера по продажам.
     МРОТ по Москве на сегодня 20 195 рублей
   </p>
-  <p class="text-calc">
+  <p class="text-calc-zp">
     С января 2021 года МРОТ повысят до 20 361 рублей. Рекомендуем сразу принять сотрудников на данный оклад.
   </p>
-  <form name="form">
-    <table>
-      <thead>
-        <tr>
-          <th>Расчет налогов </th>
-        </tr>
-      </thead>
+  <form class="margin-top form-zp" name="form">
+    <table class="table-width">
       <tbody>
         <tr>
-          <td>Генеральный директор</td>
+          <td class="medium-row">Генеральный директор</td>
+        </tr>
+        <tr class="easy-row">
+          <th class="easy-row">Оклад</th>
         </tr>
         <tr>
-          <th>Оклад</th>
+          <td><input class="table-input" type="number" value="20361" placeholder="Введите ЗП" name="director"></td>
         </tr>
         <tr>
-          <td><input type="number" value="20361" placeholder="оклад" name="director"></td>
-        </tr>
-        <tr>
-          <th>НДФЛ</th>
+          <th class="easy-row">НДФЛ</th>
         </tr>
         <tr>
           <td id="ndflDir"></td>
         </tr>
         <tr>
-          <th>На карту</th>
+          <th class="easy-row">На карту</th>
         </tr>
         <tr>
           <td id="onCardDir"></td>
         </tr>
         <tr>
-          <th>Взносы с зарплаты</th>
+          <th class="easy-row">Взносы с зарплаты</th>
         </tr>
         <tr>
           <td id="paywithsalDir"></td>
         </tr>
         <tr>
-          <th>Стоимость сотрудника</th>
+          <th class="easy-row">Стоимость сотрудника</th>
         </tr>
         <tr>
           <td id="priceDir"></td>
         </tr>
         <tr>
-          <td>Менеджер</td>
+          <td class="medium-row">Менеджер</td>
         </tr>
         <tr>
-          <th>Оклад</th>
+          <th class="easy-row">Оклад</th>
         </tr>
         <tr>
-          <td><input type="number" value="20361" placeholder="оклад" name="manager"></td>
+          <td><input class="table-input" type="number" value="20361" placeholder="Введите ЗП" name="manager"></td>
         </tr>
         <tr>
-          <th>НДФЛ</th>
+          <th class="easy-row">НДФЛ</th>
         </tr>
         <tr>
           <td id="ndflMan"></td>
         </tr>
         <tr>
-          <th>На карту</th>
+          <th class="easy-row">На карту</th>
         </tr>
         <tr>
           <td id="onCardMan"></td>
         </tr>
         <tr>
-          <th>Взносы с зарплаты</th>
+          <th class="easy-row">Взносы с зарплаты</th>
         </tr>
         <tr>
           <td id="paywithsalMan"></td>
         </tr>
         <tr>
-          <th>Стоимость сотрудника</th>
+          <th class="easy-row">Стоимость сотрудника</th>
         </tr>
         <tr>
           <td id="priceMan"></td>
         </tr>
       </tbody>
     </table>
-    <button>Рассчитать</button>
+    <button class="btn-next margin-top">Рассчитать</button>
   </form>
   {{>button}}
 </div>

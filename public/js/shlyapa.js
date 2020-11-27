@@ -9,7 +9,7 @@ form.addEventListener('submit', async (event) => {
   const debit = event.target.debit.value;
   const credit = event.target.credit.value;
 
-  const response = await fetch('/calculator_rout/calculator', {
+  const response = await fetch('/calculator/calculator', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',

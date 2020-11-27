@@ -1,0 +1,47 @@
+.text-calc-zp {
+  line-height: 1.1;
+}
+
+.text-calc-zp:first-of-type {
+  margin-bottom: 20px;
+}
+
+.form-zp {
+}
+
+.table-input {
+  border: none;
+  padding: 15px;
+}
+
+.table-row {
+  width: 100%;
+}
+
+.table-width {
+  min-width: 300px;
+  border: 1px solid #4a407c;
+  margin-top: 10px;
+}
+
+#ndflDir,
+#onCardDir,
+#paywithsalDir,
+#priceDir,
+#ndflMan,
+#onCardMan,
+#paywithsalMan,
+#priceMan {
+  padding: 15px;
+}
+
+.medium-row {
+  font-size: 18px;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.easy-row {
+  font-size: 15px;
+  background-color: #e6e6e6;
+}
