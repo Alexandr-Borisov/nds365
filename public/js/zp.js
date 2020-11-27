@@ -3,7 +3,7 @@ const zpForm = document.forms.form;
 zpForm.addEventListener('submit', async (event) => {
   event.preventDefault();
   const director = event.target.director.value;
-  const manager = event.target.director.value;
+  const manager = event.target.manager.value;
 
   const response = await fetch('/docs/calc', {
     method: 'POST',
@@ -14,14 +14,14 @@ zpForm.addEventListener('submit', async (event) => {
   });
 
   const result = await response.json();
-  document.querySelector('#ndflDir').innerText = result.NdflDir.toFixed(0);
-  document.querySelector('#onCardDir').innerText = result.cardDir.toFixed(0);
-  document.querySelector('#paywithsalDir').innerText = result.vznosDir.toFixed(0);
+  document.querySelector('#ndflDir').innerText = +result.NdflDir.toFixed(0);
+  document.querySelector('#onCardDir').innerText = +result.cardDir.toFixed(0);
+  document.querySelector('#paywithsalDir').innerText = +result.vznosDir.toFixed(0);
   document.querySelector('#priceDir').innerText = +result.priceDir;
 
-  document.querySelector('#ndflMan').innerText = result.NdflMan.toFixed(0);
-  document.querySelector('#onCardMan').innerText = result.cardMan.toFixed(0);
-  document.querySelector('#paywithsalMan').innerText = result.vznosMan.toFixed(0);
+  document.querySelector('#ndflMan').innerText = +result.NdflMan.toFixed(0);
+  document.querySelector('#onCardMan').innerText = +result.cardMan.toFixed(0);
+  document.querySelector('#paywithsalMan').innerText = +result.vznosMan.toFixed(0);
   document.querySelector('#priceMan').innerText = +result.priceMan;
 
   document.querySelector('#sum').innerText = Number(director) + Number(manager);
