@@ -17,7 +17,7 @@
 .title-range {
   font-size: 24px;
   font-weight: 700;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   margin-top: 20px;
 }
 
@@ -28,6 +28,18 @@
   color: #e2dddd;
 }
 
-.margin-top{
+.margin-top {
   margin-top: 20px;
+}
+
+.line-height {
+  line-height: 1.4;
+}
+
+.block-container__form {
+  margin-bottom: 20px;
+}
+
+.margin-top-big {
+  margin-top: 50px;
 }

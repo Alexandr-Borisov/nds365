@@ -31,10 +31,58 @@ input:focus {
 .form-control-range {
   margin-top: 20px;
 }
+
 .up {
   display: flex;
   cursor: pointer;
 }
+
 .op {
   display: flex;
+}
+
+.email-title {
+  line-height: 1.2;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.email-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.back-div-email {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 3%;
+  left: 3%;
+}
+
+.back-email {
+  width: 43px;
+  height: 38px;
+}
+
+.email-back {
+  font-size: 18px;
+}
+
+.form-control {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 60px;
+  outline: #4a407c;
+}
+
+.email-link,
+.email-link:active,
+.email-link:visited,
+.email-link:hover {
+  color: #4a407c;
+  text-decoration: none;
 }
