@@ -43,3 +43,27 @@
 .margin-top-big {
   margin-top: 50px;
 }
+
+.mt-color{
+  color: #EA9D89;
+  font-size: 16px;
+}
+.btn-non{
+  background: #BDBACA;
+  border-radius: 20px;
+}
+.span-non{
+  color: #4A407C;
+  font-size: 16px;
+}
+.p-non{
+  color: #4A407C;
+  font-size: 24px;
+}
+.a-non{
+  color: #4A407C;
+  font-size: 16px;
+  background: #BDBACA;
+  border-radius: 20px;
+  text-decoration: none;
+}

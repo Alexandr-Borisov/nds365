@@ -1,15 +1,18 @@
+<div class="range-container">
+  <h2 class="title-range">Мы предлагаем для Вас аутсорсинг бухгалтерии</h2>
 
-<h2>Мы  предлагаем для Вас аутсорсинг бухгалтерии</h2>
+  <p class="margin-top mt-color">Средняя стоимость услуг на рынке 7000 р.</p>
 
-<p>Средняя стоимость услуг на рынке 7000 р.</p>
-{{#if status}}
-<a href="#">Штатный сотрудник</a>
-{{else}}
-<a href="#">Разместить вакансию</a>
-<a href="#">Заниматься бухгалтерией самостоятельно</a>
-<a href="#">Подобрать специалиста</a>
-<a href="#">Далее</a>
-{{/if}}
-<a class="btn-next" href="/calculator">Пропустить</a>
-{{>button}}
+  <p class="btn-next margin-top btn-non"><span class="span-non">Разместить вакансию</span></p>
 
+  <p class="p-non margin-top-big">Другие варианты</p>
+  {{#if status}}
+  <p class="btn-next margin-top a-non">Штатный сотрудник</p>
+  {{else}}
+  <p class="btn-next margin-top a-non">Разместить вакансию</p>
+  <p class="btn-next margin-top a-non">Заниматься бухгалтерией самостоятельно</p>
+  <p class="btn-next margin-top a-non">Подобрать специалиста</p>
+  {{/if}}
+  <a class="btn-next margin-top-big" href="/calculator">Пропустить</a>
+  {{>button}}
+</div>
