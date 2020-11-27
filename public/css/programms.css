@@ -1,0 +1,27 @@
+
+
+.prog {
+  width: 68px;
+  height: 33px;
+  margin-top: 50px;
+}
+.prog1 {
+  width: 281px;
+  height: 53px;
+  margin-top: 30px;
+}
+.prog2 {
+  width: 229px;
+  height: 52px; 
+  margin-top: 30px;
+}
+.prog3 {
+  width: 140px;
+  height: 140px;
+}
+.main1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
